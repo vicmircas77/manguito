@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  position: relative;
+  overflow: hidden; /* Asegura que los botones no se salgan de la ventana */
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Espaciado horizontal entre botones */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#yesButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+#yesButton:hover {
+  background-color: #45a049;
+}
+
+#noButton {
+  background-color: #f44336;
+  color: white;
+  position: absolute;
+  left: 300px; /* Posición inicial separada */
+  top: 150px; /* Posición inicial separada */
+}
+
+#noButton:hover {
+  background-color: #d32f2f;
+}
+
+.reference {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
